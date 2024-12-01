@@ -9,7 +9,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url('https://static.videezy.com/system/resources/thumbnails/000/005/014/original/magical-nebula-4k-motion-background.jpg'); /* Fondo espacial */
+            background-image: url('https://www.solofondos.com/wp-content/uploads/2017/12/Fondos-de-pantalla-3D-navide%C3%B1os-en-movimiento-gratis-para-PC.gif'); /* Fondo espacial */
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -67,42 +67,44 @@
 <body>
     <h1 class="page-title">Galaxy Dreams</h1>
     <div class="container">
-        <h1>Consulta tus dulces</h1>
+        <h1>Consulta tus galletas</h1>
         <input type="text" id="username" placeholder="Ingresa tu usuario">
-        <button onclick="checkPoints()">Ver Dulces</button>
+        <button onclick="checkPoints()">Ver Galletas</button>
         <div class="points" id="points"></div>
     </div>
+
+    <audio id="background-music" src="navidad.mp3"></audio> <!-- Reemplaza 'tu_musica.mp3' con la URL de tu música -->
 
     <script>
         // USUARIOS Y PUNTAJES GALAXY
         const users = {
-"🐍 Fran"  : 180,
-"🐍 Gaby"  : 80,
-"🐍 Aler" : 180,
-"🐍 Alice"  : 180,
-"🐍 Aly"  : 180,
-"🐍 Dayana"  : 180,
-"🐍 Hanna (aphaea)"  : 180,
-"🐍 Alejandro"  : 160,
-"🐍 Georgelly"  : 80,
-"🐍 Emilia"  : 80,
-"🌹 Leysha"  : 180,
-"🌹 Dennisse"  : 180,
-"🌹 Adrián"   : 100,
-"🌹 Karly"   : 180,
-"🌹 Liz"   : 160,
-"🌹 Maryuri"   : 160,
-"🌹 Maga"   : 160,
-"🌹 Ali"   : 80,
-"🌹 Ale"   : 80,
-"🌹 Kamila"   : 80,
-"🍷 Melissa"  : 180,
-"🍷 Yeruti" : 270,
-"🍷 Julián" : 1365, 
-"🍷 Maca" : 660,
-"🍷 Mari" : 160,
-"⚜️ Fénix"  : 180,
-"⚜️ María"  : 80,
+            "🐍 Fran": 180,
+            "🐍 Gaby": 80,
+            "🐍 Aler": 180,
+            "🐍 Alice": 180,
+            "🐍 Aly": 180,
+            "🐍 Dayana": 180,
+            "🐍 Hanna (aphaea)": 180,
+            "🐍 Alejandro": 160,
+            "🐍 Georgelly": 80,
+            "🐍 Emilia": 80,
+            "🌹 Leysha": 180,
+            "🌹 Dennisse": 180,
+            "🌹 Adrián": 100,
+            "🌹 Karly": 180,
+            "🌹 Liz": 160,
+            "🌹 Maryuri": 160,
+            "🌹 Maga": 160,
+            "🌹 Ali": 80,
+            "🌹 Ale": 80,
+            "🌹 Kamila": 80,
+            "🍷 Melissa": 180,
+            "🍷 Yeruti": 270,
+            "🍷 Julián": 1365, 
+            "🍷 Maca": 660,
+            "🍷 Mari": 160,
+            "⚜️ Fénix": 180,
+            "⚜️ María": 80,
         };
 
         function checkPoints() {
@@ -115,6 +117,14 @@
                 pointsDiv.textContent = "Usuario no encontrado. Por favor, verifica el nombre ingresado.";
             }
         }
+
+        // Reproducir música al hacer clic en cualquier parte de la página
+        document.body.addEventListener('click', () => {
+            const music = document.getElementById('background-music');
+            if (music.paused) {
+                music.play();
+            }
+        });
     </script>
 </body>
 </html>

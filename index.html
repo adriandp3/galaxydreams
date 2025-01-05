@@ -9,7 +9,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url('https://www.solofondos.com/wp-content/uploads/2017/12/Fondos-de-pantalla-3D-navide%C3%B1os-en-movimiento-gratis-para-PC.gif'); /* Fondo espacial */
+            background-image: url('https://i.pinimg.com/originals/d2/e4/33/d2e433a119194661db9909a4162bcd36.gif'); /* Fondo espacial */
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -65,48 +65,48 @@
     </style>
 </head>
 <body>
-    <h1 class="page-title">Galaxy Dreams</h1>
+    <h1 class="page-title">🌴El rincón tropical🌴</h1>
     <div class="container">
-        <h1>Consulta tus galletas</h1>
+        <h1>Consulta tus Cócteles🍹</h1>
         <input type="text" id="username" placeholder="Ingresa tu usuario">
-        <button onclick="checkPoints()">Ver Galletas</button>
+        <button onclick="checkPoints()">Ver Cócteles</button>
         <div class="points" id="points"></div>
     </div>
 
-    <audio id="background-music" src="navidad.mp3"></audio> <!-- Reemplaza 'tu_musica.mp3' con la URL de tu música -->
+    <audio id="background-music" src="verano.mp3"></audio> <!-- Reemplaza 'tu_musica.mp3' con la URL de tu música -->
 
     <script>
         // USUARIOS Y PUNTAJES GALAXY
         const users = {
-         "🐍 Fran"  : 660,
-"🐍 Gaby"  : 210,
+         "🐍 Fran"  : 255,
+"🐍 Gaby"  : 310,
 "🐍 Aler" : 260,
 "🐍 Alice"  : 510,
-"🐍 Aly"  : 380,
-"🐍 Dayana"  : 180,
+"🐍 Aly"  : 550,
+"🐍 Dayana"  : 230,
 "🐍 Hanna"  : 360,
 "🐍 Alejandro"  : 160,
 "🐍 Georgelly"  : 130,
-"🐍 Emilia"  : 160,
-"🐍 Indra"  : 590,
+"🐍 Emilia"  : 195,
+"🐍 Indra"  : 725,
 "🐍 Juli"  : 90,
-"🐍 Alisson"  : 290,
+"🐍 Alisson"  : 390,
 "🐍 Sara"  : 180,
-"🐍 Vane"  : 200,
-"🐍 Ori"  : 100,
-"🌹 Leysha"  : 850,
-"🌹 Dennisse"  : 620,
-"🌹 Adrián"   : 440,
-"🌹 Karly"   : 760,
+"🐍 Vane"  : 100,
+"🐍 Ori"  : 200,
+"🌹 Leysha"  : 1020,
+"🌹 Dennisse"  : 755,
+"🌹 Adrián"   : 1120,
+"🌹 Karly"   : 25,
 "🌹 Liz"   : 570,
 "🌹 Maryuri"   : 240,
-"🌹 Maga"   : 160,
+"🌹 Maga"   : 0,
 "🌹 Ali"   : 260,
-"🌹 Ale"   : 540,
+"🌹 Ale"   : 620,
 "🌹 Dani"   : 80,
-"🌹 Kamila"   : 780,
-"🌹 Lizzie"   : 160,
-"🌹 Cami"   : 280,
+"🌹 Kamila"   : 610,
+"🌹 Lizzie"   : 240,
+"🌹 Cami"   : 480,
 "🌹 Alondra"   : 160,
 "🌹 Alondra jefa"   : 230,
 "🌹 Junio"   : 100,
@@ -115,14 +115,14 @@
 "🌹 Natalia"   : 180,
 "🌹 Katia"   : 50,
 "🍷 Ana" : 160,
-"🍷 Melissa"  : 280,
-"🍷 Yeruti" : 550,
-"🍷 Jossie" : 160,
-"🍷 Julián" : 1365, 
-"🍷 Maca" : 860,
-"🍷 Maritza" : 980,
+"🍷 Melissa"  : 350,
+"🍷 Yeruti" : 1210,
+"🍷 Jossie" : 195,
+"🍷 Julián" : 1765, 
+"🍷 Maca" : 1145,
+"🍷 Maritza" : 1130,
 "🍷 Monse" : 100,
-"🍷 Jeff" : 280,
+"🍷 Jeff" : 350,
 "🍷 Iliana" : 50,
 "🍷 Lourdes" : 50,
 "🍷 Andy" : 50,
@@ -133,13 +133,13 @@
 "🍷 Serena" : 230,
 "🍷 Leydy" : 60,
 "🍷 Demian" : 100,
-"🍷 Aldo" : 20,
-"⚜️ Fénix"  : 910,
+"🍷 Aldo" : 390,
+"⚜️ Fénix"  : 635,
 "⚜️ María"  : 130,
 "⚜️ Melissa"  : 150,
-"⚜️ Xime"  : 50,
+"⚜️ Xime"  : 230,
 "⚜️ Andy"  : 50,
-"⚜️ Tania"  : 50,
+"⚜️ Tania"  : 150,
 "⚜️ Yuli"  : 190,
 "⚜️ Koalita"  : 310,
 "⚜️ Yaz"  : 80,
@@ -152,7 +152,7 @@
             const pointsDiv = document.getElementById('points');
 
             if (username in users) {
-                pointsDiv.textContent = `Hola, ${username}. Tienes ${users[username]} galletas.`;
+                pointsDiv.textContent = `Hola, ${username}. Tienes ${users[username]} Cócteles.`;
             } else {
                 pointsDiv.textContent = "Usuario no encontrado. Por favor, verifica el nombre ingresado.";
             }
